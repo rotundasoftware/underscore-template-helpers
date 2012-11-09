@@ -9,7 +9,7 @@ Define global template helpers in underscore. Example:
 Now in an underscore template:
 
 	<script type="text/template">
-		<div class="button <% iff( isHightlighted, "highlighted" ) %>">
+		<div class="button <%= iff( isHightlighted, "highlighted" ) %>">
 			My button
 		</div>
 	</script>
