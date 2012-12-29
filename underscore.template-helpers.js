@@ -27,7 +27,7 @@
 			var template = originalUnderscoreTemplateFunction.apply( this, arguments );
 
 			var wrappedTemplate = function( data ) {
-				_.defaults( data, templateHelpers );
+				if( data ) _.defaults( data, templateHelpers );
 				return template.apply( this, arguments );
 			};
 
