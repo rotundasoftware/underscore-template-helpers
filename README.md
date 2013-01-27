@@ -14,9 +14,9 @@ Now in an underscore template:
 		</div>
 	</script>
 
-### Use with Backbone.Subviews
+### Using with Backbone.Subviews
 
-This mixin comes in handy when used with the [Backbone.Subviews](https://github.com/dgbeck/backbone.subviews) View mixin for a clean syntax to insert subviews into a view template:
+This mixin comes in handy when used with the [Backbone.Subviews](https://github.com/dgbeck/backbone.subviews) View mixin to insert subviews into a view template:
 
 ```javascript
 _.addTemplateHelpers( {
