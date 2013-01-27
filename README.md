@@ -19,7 +19,7 @@ Now in an underscore template, you can use the `iff` function:
 
 ### Using with Backbone.Subviews
 
-This mixin comes in handy when used with the [Backbone.Subviews](https://github.com/rotundasoftware/backbone.subviews) View mixin to insert subviews into a view template:
+Helpers also come handy when used with [Backbone.Subviews](https://github.com/rotundasoftware/backbone.subviews), a mixin for creating and managing subviews in your [Backbone.js](http://backbonejs.org/) applications.
 
 ```javascript
 _.addTemplateHelpers( {
