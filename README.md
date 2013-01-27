@@ -1,7 +1,7 @@
 
 # Underscore.js global template helpers
 
-This [underscore.js](https://github.com/documentcloud/underscore) mixin allows you to define global template helpers that will be available in all your underscore templates. For example, you can define a "if and only if" function that will only output text if its first argument evaluates to true:
+This [underscore.js](https://github.com/documentcloud/underscore) mixin allows you to define global template helpers that will be available in all your underscore templates. For example, you can define aa "if and only if" function that will only output text if its first argument evaluates to true:
 
 	_.addTemplateHelpers( {
 		iff : function( condition, outputString ) {
@@ -19,7 +19,7 @@ Now in an underscore template, you can use the `iff` function:
 
 ### Using with Backbone.Subviews
 
-This mixin comes in handy when used with the [Backbone.Subviews](https://github.com/dgbeck/backbone.subviews) View mixin to insert subviews into a view template:
+This mixin comes in handy when used with the [Backbone.Subviews](https://github.com/rotundasoftware/backbone.subviews) View mixin to insert subviews into a view template:
 
 ```javascript
 _.addTemplateHelpers( {
