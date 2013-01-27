@@ -1,4 +1,7 @@
-Define global template helpers in underscore. Example:
+
+# Underscore template helpers
+
+This underscore mixin allows you to define global template helpers in underscore, that will be available in all your underscore templates. For example:
 
 	_.addTemplateHelpers( {
 		iff : function( condition, outputString ) {
@@ -6,7 +9,7 @@ Define global template helpers in underscore. Example:
 		}
 	} );
 
-Now in an underscore template:
+Now in an underscore template, you can use the `iff` function:
 
 	<script type="text/template">
 		<div class="button <%= iff( isHightlighted, "highlighted" ) %>">
