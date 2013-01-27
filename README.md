@@ -1,7 +1,7 @@
 
 # Underscore.js global template helpers
 
-This [underscore.js](https://github.com/documentcloud/underscore) mixin allows you to define global template helpers that will be available in all your underscore templates. For example, you can define aa "if and only if" function that will only output text if its first argument evaluates to true:
+This [underscore.js](https://github.com/documentcloud/underscore) mixin allows you to define global template helpers that will be available in all your underscore templates. For example, you can define aa "if and only if" function that will only output text if its first argument evaluates to `true`:
 
 	_.addTemplateHelpers( {
 		iff : function( condition, outputString ) {
