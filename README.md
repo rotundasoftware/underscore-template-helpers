@@ -1,7 +1,7 @@
 
-# Underscore template helpers
+# Underscore.js template helpers
 
-This underscore mixin allows you to define global template helpers in underscore, that will be available in all your underscore templates. For example:
+This [underscore.js](https://github.com/documentcloud/underscore) mixin allows you to define global template helpers that will be available in all your underscore templates. For example:
 
 	_.addTemplateHelpers( {
 		iff : function( condition, outputString ) {
