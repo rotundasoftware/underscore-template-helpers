@@ -1,4 +1,3 @@
-
 # Underscore.js global template helpers
 
 This [underscore.js](https://github.com/documentcloud/underscore) mixin allows you to define global template helpers that will be available in all your underscore templates. For example, you can define aa "if and only if" function that will only output text if its first argument evaluates to `true`:
@@ -24,7 +23,7 @@ Helpers also come handy when used with [Backbone.Subviews](https://github.com/ro
 ```javascript
 _.addTemplateHelpers( {
 	subview : function( subviewName ) {
-		return "<div data-subview='" + subviewName + "'></div>"
+		return "<div data-subview='" + subviewName + "'></div>";
 	}
 } );
 ```
