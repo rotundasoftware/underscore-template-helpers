@@ -7,7 +7,7 @@
 			_.extend( templateHelpers, newHelpers );
 		},
 
-		template : function(text, data, settings) {
+		template : function( text, data, settings ) {
 			// replace the built in _.template function with one that supports the addTemplateHelpers
 			// function above. Basically the combo of the addTemplateHelpers function and this new
 			// template function allows us to mix in global "helpers" to the data objects passed
@@ -27,8 +27,8 @@
 			var template = originalUnderscoreTemplateFunction.apply( this, arguments );
 
 			var wrappedTemplate = function( data ) {
-				if( data ) _.defaults( data, templateHelpers );
-				return template.apply( this, arguments );
+				data = _.defaults( {}, data, templateHelpers );
+				return template.call( this, data );
 			};
 
 			return wrappedTemplate;
