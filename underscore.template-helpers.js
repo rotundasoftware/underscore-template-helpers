@@ -14,8 +14,7 @@
 			// to all our templates when they render. This replacement template function just wraps
 			// the original _.template function, so it sould be pretty break-resistent moving forward.
 
-			if( data )
-			{
+			if( data ) {
 				// if data is supplied, the original _.template function just returns the raw value of the
 				// render function (the final rentered html/text). So in this case we just extend
 				// the data param with our templateHelpers and return raw value as well.
