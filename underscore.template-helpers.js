@@ -2,7 +2,7 @@
 	var originalUnderscoreTemplateFunction = _.template;
 	var templateHelpers = {};
 
-	_.mixin({
+	_.mixin( {
 		addTemplateHelpers : function( newHelpers ) {
 			_.extend( templateHelpers, newHelpers );
 		},
@@ -33,4 +33,4 @@
 			return wrappedTemplate;
 		}
 	} );
-})();
+} )();
