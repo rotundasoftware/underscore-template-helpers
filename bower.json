@@ -15,6 +15,6 @@
 	],
 	"license" : "MIT",
 	"dependencies" : {
-		"underscore" : "~1.4 ~1.5"
+		"underscore" : "~1.4"
 	}
 }
