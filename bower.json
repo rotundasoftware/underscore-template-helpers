@@ -1,0 +1,20 @@
+{
+	"name" : "underscore-template-helpers",
+	"version" : "0.1.0",
+	"homepage" : "https://github.com/rotundasoftware/underscore-template-helpers.git",
+	"authors" : [
+		"David Beck <david@rotundasoftware.com>"
+	],
+	"description" : "A mixin that allows you to define global helpers for the underscore.js template function.",
+	"main" : "underscore.template-helpers.js",
+	"keywords" : [
+		"underscore",
+		"templates",
+		"template",
+		"helpers"
+	],
+	"license" : "MIT",
+	"dependencies" : {
+		"underscore" : "~1.4"
+	}
+}

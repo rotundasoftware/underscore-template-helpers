@@ -1,4 +1,18 @@
-(function() {
+// UMD wrapper
+(function( root, factory ) {
+	// Deal with various environments.
+	if ( typeof define === 'function' && define.amd ) {
+		// AMD
+		define( [ 'underscore' ], factory );
+	} else if ( typeof exports !== 'undefined' ) {
+		// Node/CommonJS
+		factory( require( 'underscore' ) );
+	} else {
+		// Browser globals
+		factory( root._ );
+	}
+}( this, function( _ ) {
+
 	var originalUnderscoreTemplateFunction = _.template;
 	var templateHelpers = {};
 
@@ -33,4 +47,4 @@
 			return wrappedTemplate;
 		}
 	} );
-} )();
+}));
