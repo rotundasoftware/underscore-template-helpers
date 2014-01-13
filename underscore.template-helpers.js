@@ -1,4 +1,20 @@
-(function() {
+// UMD wrapper
+(function( root, factory ) {
+	// Deal with various environments.
+	if ( typeof define === 'function' && define.amd ) {
+		// AMD
+		define( [ 'underscore' ], function( _ ) {
+			factory( root, _ );
+		});
+	} else if ( typeof exports !== 'undefined' ) {
+		// Node/CommonJS
+		factory( root, require( 'underscore' ) );
+	} else {
+		// Browser globals
+		factory( root, root._ );
+	}
+}( this, function( root, _ ) {
+
 	var originalUnderscoreTemplateFunction = _.template;
 	var templateHelpers = {};
 
